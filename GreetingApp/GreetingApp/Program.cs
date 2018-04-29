@@ -24,7 +24,7 @@ namespace GreetingApp
             greeting = "Hello," + name + "nice to meet you!";
 
             // Display "Hello, " + name + "nice to meet you!"
-            Console.WriteLine("Hello, " + name + " nice to meet you!");
+            Console.WriteLine(greeting);
 
             // End
             Console.ReadLine();
