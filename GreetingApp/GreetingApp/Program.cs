@@ -18,8 +18,19 @@ namespace GreetingApp
             Console.Write("What is your name?");
             name = Console.ReadLine();
 
-            // Display "Hello, " + name + "nice to meet you!"
-            Console.WriteLine("Hello, " + name + ", nice to meet you!");
+            if (name == "용단")
+            {
+                Console.WriteLine("안녕하세요 " + name + "님 매우 반갑습니다!");
+            }
+            else if (name == "Sophie")
+            {
+                Console.WriteLine("Bonjour " + name + ", très gentil de vous rencontrer!");
+            }
+            else
+            {
+                // Display "Hello, " + name + "nice to meet you!"
+                Console.WriteLine("Hello, " + name + ", nice to meet you!");
+            }
 
             // End
             Console.ReadLine();
