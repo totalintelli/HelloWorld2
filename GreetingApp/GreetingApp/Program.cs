@@ -13,24 +13,23 @@ namespace GreetingApp
             // GreeingApp
             // Initialize name to ""
             string name = "";
+            string nation = "";
+            Dictionary<string, string> firstGreetings = new Dictionary<string, string>();
+            firstGreetings.Add("한국", "안녕하세요, ");
+            firstGreetings.Add("USA", "Hello, ");
+            firstGreetings.Add("France", "Bonjour, ");
+            Dictionary<string, string> secondGreetings = new Dictionary<string, string>();
+            secondGreetings.Add("한국", "님, 매우 반갑습니다.");
+            secondGreetings.Add("USA", ", nice to meet you!");
+            secondGreetings.Add("France", ", très gentil de vous rencontrer!");
 
             // Prompt for name with "What is your name?"
             Console.Write("What is your name?");
             name = Console.ReadLine();
+            Console.Write("Where are you from?");
+            nation = Console.ReadLine();
 
-            if (name == "용단")
-            {
-                Console.WriteLine("안녕하세요 " + name + "님 매우 반갑습니다!");
-            }
-            else if (name == "Sophie")
-            {
-                Console.WriteLine("Bonjour " + name + ", très gentil de vous rencontrer!");
-            }
-            else
-            {
-                // Display "Hello, " + name + "nice to meet you!"
-                Console.WriteLine("Hello, " + name + ", nice to meet you!");
-            }
+            Console.WriteLine(firstGreetings[nation] + name + secondGreetings[nation]);
 
             // End
             Console.ReadLine();
